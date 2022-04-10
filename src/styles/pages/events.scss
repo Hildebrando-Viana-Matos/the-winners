@@ -1,0 +1,24 @@
+main {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .text {
+        margin: 2rem 0;
+
+        .container {
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .gifNFT {
+        display: block;
+        margin: 4rem auto;
+        width: 30%;
+        height: auto;
+    }
+}

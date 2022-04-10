@@ -1,0 +1,62 @@
+.doubts {
+    margin: 3rem 0;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .content {
+        margin: 1rem 0;
+
+        .boxDoubts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border: 1px solid var(--main-color);
+
+            span {
+                font-size: 1.5rem;
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+                color: var(--main-color);
+            }
+
+            button.buttonDoubts {
+                width: auto;
+                height: auto;
+                padding: auto;
+                background: transparent;
+                border: none;
+                outline: none;
+
+                svg {
+                    font-size: 30px;
+                    color: var(--gray);
+                }
+            }
+        }
+
+        .boxAnswer {
+            padding: 2rem;
+            background: var(--white);
+            border: 1px solid var(--main-color);
+
+            p {
+                font-size: 1rem;
+                font-weight: 300;
+                color: var(--black);
+            }
+        }
+
+        .open {
+            display: block;
+        }
+
+        .closed {
+            display: none;
+        }
+    }
+}

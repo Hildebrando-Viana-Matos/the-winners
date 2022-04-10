@@ -1,0 +1,128 @@
+:root {
+    --main-color: #6b5be6;
+    --white: #FFFFFF;
+    --transparency: rgba(45, 52, 54, 0.9);
+    --black: #2d3436;
+    --gray: #D4D4D4;
+    --background: #f2f3f5;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  html {
+    @media (max-width: 1080px) {
+      font-size: 93.75%; // 15px
+    }
+    @media (max-width: 720px) {
+      font-size: 87.5%; // 14px
+    }
+    @media (max-width: 500px) {
+      font-size: 81.25%; // 13px
+    }
+  }
+  
+  body {
+    background: var(--background);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body,
+  input,
+  button,
+  textarea {
+    font: 400 1rem "Inter", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: filter 200ms;
+  
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: filter 400ms;
+  
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+  
+  .container {
+    width: unquote("min(90vw, 1040px)");
+    margin: 2rem auto;
+  }
+  
+  h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
+  }
+  
+  .contentScreens {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    main {
+      width: 95%;
+      height: auto;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+  
+      .container {
+        margin: 2rem auto;
+      }
+    }
+  
+    @media (max-width: 800px) {
+      & {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+  
+        main {
+          position: relative;
+          width: 100%;
+  
+          .container {
+            margin: 1rem auto;
+          }
+        }
+      }
+    }
+  }
+
+  /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--background);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  border: 3px solid var(--background);
+}

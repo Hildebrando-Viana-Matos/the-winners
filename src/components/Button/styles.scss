@@ -1,0 +1,13 @@
+button.mainButton {
+    width: unquote("min(90vw, 333px)");
+    padding: 1.4rem 2rem;
+    border-radius: 0.5rem;
+    background: var(--main-color);
+    
+    span {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        color: var(--white) !important;
+    }
+}

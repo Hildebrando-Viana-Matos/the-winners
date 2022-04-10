@@ -5,7 +5,7 @@ import "./styles.scss";
 
 export function Categories() {
   return (
-    <section className="categories">
+    <section className="categories" id="categories">
       <div className="container">
         <h1>Categorias</h1>
 

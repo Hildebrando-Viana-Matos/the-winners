@@ -30,7 +30,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="propose">
+      <section className="propose" id="propose">
         <div className="container">
           <div className="imgPropose"></div>
           <div className="descriptionPropose">
@@ -67,7 +67,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="howItWorks">
+      <section className="howItWorks" id="howItWorks">
         <div className="container">
           <div className="boxHowItWorks boxTitle">
             <h1 className="titleHowItWorks">Como Funciona?</h1>
@@ -125,7 +125,7 @@ export function Home() {
 
       <Categories />
 
-      <section className="whatWeDo">
+      <section className="whatWeDo" id="whatWeDo">
         <div className="title">
           <h1>O que fazemos?</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
@@ -182,7 +182,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="history">
+      <section className="history" id="history">
         <div className="descHistory">
           <h1>História</h1>
           <p>

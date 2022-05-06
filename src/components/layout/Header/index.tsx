@@ -1,18 +1,19 @@
+// Icons
+import { SiInstagram, SiTiktok, SiDiscord, SiTwitter } from "react-icons/si";
+
 // React
 import { useState, useRef } from "react";
 
 // React Router Dom
 import { Link } from "react-router-dom";
 
-// Icons
-import { SiInstagram, SiTiktok, SiDiscord } from "react-icons/si";
-// import OpenSea from "../../../assets/icons/opensea.svg";
-
 // Styles
 import "./styles.scss";
 
 // Icon
 import { FiMenu, FiX } from "react-icons/fi";
+
+var OpenSea = require("../../../assets/icons/opensea.png");
 
 export function Header() {
   const header = useRef(null);
@@ -43,20 +44,22 @@ export function Header() {
     <header id="header">
       <div className="container">
         <div className="logo"></div>
-        <span>“O sentido da vida é ajudar o próximo.”</span>
         <div className="socials">
-          <div className="boxSocials">
+          <a href="" className="boxSocials">
             <SiInstagram />
-          </div>
-          <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
             <SiTiktok />
-          </div>
-          <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
             <SiDiscord />
-          </div>
-          {/* <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
+            <SiTwitter />
+          </a>
+          <a href="" className="boxSocials">
             <img src={OpenSea} alt="OpenSea Icon" />
-          </div> */}
+          </a>
         </div>
         <button
           className={`menuButton ${menuIsOpen ? "active" : ""}`}

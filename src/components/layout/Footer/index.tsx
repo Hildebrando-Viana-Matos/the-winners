@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // Styles
 import "./styles.scss";
 
-var OpenSea = require("../../../assets/icons/opensea.png");
+var OpenSea = require("../../../assets/icons/opensea_white.png");
 
 export function Footer() {
   const header = useRef(null);

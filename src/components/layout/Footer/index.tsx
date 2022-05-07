@@ -2,14 +2,15 @@
 import { useRef } from "react";
 
 // Icons
-import { SiInstagram, SiTiktok, SiDiscord } from "react-icons/si";
-// import OpenSea from "../../../assets/icons/opensea.svg";
+import { SiInstagram, SiTiktok, SiDiscord, SiTwitter } from "react-icons/si";
 
 // React Router Dom
 import { Link } from "react-router-dom";
 
 // Styles
 import "./styles.scss";
+
+var OpenSea = require("../../../assets/icons/opensea.png");
 
 export function Footer() {
   const header = useRef(null);
@@ -32,18 +33,21 @@ export function Footer() {
         <div className="logo"></div>
         <span>“O sentido da vida é ajudar o próximo.”</span>
         <div className="socials">
-          <div className="boxSocials">
+          <a href="" className="boxSocials">
             <SiInstagram />
-          </div>
-          <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
             <SiTiktok />
-          </div>
-          <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
             <SiDiscord />
-          </div>
-          {/* <div className="boxSocials">
+          </a>
+          <a href="" className="boxSocials">
+            <SiTwitter />
+          </a>
+          <a href="" className="boxSocials">
             <img src={OpenSea} alt="OpenSea Icon" />
-          </div> */}
+          </a>
         </div>
       </div>
       <div className="container">

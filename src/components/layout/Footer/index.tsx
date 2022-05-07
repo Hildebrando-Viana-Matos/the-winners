@@ -31,7 +31,6 @@ export function Footer() {
     <footer>
       <div className="container">
         <div className="logo"></div>
-        <span>“O sentido da vida é ajudar o próximo.”</span>
         <div className="socials">
           <a href="" className="boxSocials">
             <SiInstagram />
